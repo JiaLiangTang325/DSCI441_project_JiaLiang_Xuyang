@@ -77,6 +77,10 @@ Run the Streamlit WebApp from the project root:
 streamlit run aux_1.py
 ```
 
+Public demo WebApp:
+
+<https://dsci441project-jialiangxuyang.streamlit.app/>
+
 The app provides:
 
 - Dataset overview and filters
@@ -88,7 +92,11 @@ The app provides:
 - Interactive AQI category prediction
 
 ## Streamlit Cloud Deployment
-To create the public demo WebApp link required for submission:
+The deployed public demo WebApp is available at:
+
+<https://dsci441project-jialiangxuyang.streamlit.app/>
+
+If the app needs to be redeployed:
 
 1. Go to <https://share.streamlit.io/>.
 2. Sign in with GitHub.
@@ -125,4 +133,8 @@ After the requested filename swap, `aux_1.py` is the Streamlit WebApp entry poin
 Direct repository link:
 
 <https://github.com/JiaLiangTang325/DSCI441_project_JiaLiang_Xuyang>
+
+Direct Streamlit demo link:
+
+<https://dsci441project-jialiangxuyang.streamlit.app/>
 

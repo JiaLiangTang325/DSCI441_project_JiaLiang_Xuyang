@@ -29,6 +29,9 @@ pip install -r requirements.txt
 Run the Streamlit WebApp
 streamlit run aux_1.py
 
+Public demo WebApp
+https://dsci441project-jialiangxuyang.streamlit.app/
+
 Deploy the Streamlit WebApp
 1. Go to https://share.streamlit.io/
 2. Sign in with GitHub.

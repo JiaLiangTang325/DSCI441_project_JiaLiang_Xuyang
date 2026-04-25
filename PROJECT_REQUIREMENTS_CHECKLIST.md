@@ -19,6 +19,8 @@ This checklist maps the repository files to the course submission requirements.
 
 ## Demo WebApp
 
+- Public demo link: <https://dsci441project-jialiangxuyang.streamlit.app/>
+
 - The Streamlit app runs locally with:
 
 ```bash
