@@ -6,6 +6,8 @@ import seaborn as sns
 import streamlit as st
 
 from aux_1 import (
+    AQI_CATEGORY_COLORS,
+    AQI_CATEGORY_DESCRIPTIONS,
     AQI_CATEGORY_ORDER,
     POLLUTANT_VALUE_COLS,
     bootstrap_mean_aqi_ci,
@@ -42,8 +44,8 @@ def get_model(df: pd.DataFrame) -> dict[str, object]:
 def draw_category_distribution(df: pd.DataFrame) -> plt.Figure:
     counts = category_counts(df)
     fig, ax = plt.subplots(figsize=(9, 4.5))
-    colors = ["#2f9e44", "#f59f00", "#f08c00", "#e03131", "#9c36b5", "#5f3dc4"]
-    ax.bar(counts.index, counts.values, color=colors[: len(counts)])
+    colors = [AQI_CATEGORY_COLORS[category] for category in counts.index]
+    ax.bar(counts.index, counts.values, color=colors)
     ax.set_xlabel("")
     ax.set_ylabel("Number of observations")
     ax.set_title("AQI category distribution")
@@ -190,4 +192,5 @@ with model_tab:
         pm25_aqi=pm25_aqi,
     )
     st.success(f"Predicted AQI category: {prediction}")
+    st.caption(AQI_CATEGORY_DESCRIPTIONS.get(prediction, ""))
     st.dataframe(probability_df, use_container_width=True, hide_index=True)
