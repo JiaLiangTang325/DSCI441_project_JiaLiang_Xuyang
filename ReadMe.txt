@@ -29,6 +29,14 @@ pip install -r requirements.txt
 Run the Streamlit WebApp
 streamlit run main.py
 
+Deploy the Streamlit WebApp
+1. Go to https://share.streamlit.io/
+2. Sign in with GitHub.
+3. Choose this repository.
+4. Set branch to main.
+5. Set main file path to main.py.
+6. Deploy and use the generated streamlit.app link for the demo submission.
+
 Repository structure
 data/
   global_air_pollution_dataset.csv

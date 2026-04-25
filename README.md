@@ -77,6 +77,16 @@ The app provides:
 - Random Forest model evaluation
 - Interactive AQI category prediction
 
+## Streamlit Cloud Deployment
+To create the public demo WebApp link required for submission:
+
+1. Go to <https://share.streamlit.io/>.
+2. Sign in with GitHub.
+3. Create a new app from this repository.
+4. Use branch `main`.
+5. Use `main.py` as the main file path.
+6. Deploy the app and submit the generated `streamlit.app` URL.
+
 The original notebook analysis is available at:
 
 ```text
