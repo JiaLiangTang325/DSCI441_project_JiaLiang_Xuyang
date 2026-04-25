@@ -1,59 +1,106 @@
-# Global Air Pollution AQI Analysis
+# Global Air Pollution AQI Analysis and Forecasting
 
-## Project Overview
-This project analyzes a global air pollution dataset and builds machine learning models to classify the overall AQI category based on pollutant measurements and location-related features. In addition to predictive modeling, the project also includes a statistical analysis component to examine pollutant relationships and country-level AQI differences.
+## Project Description
+This project analyzes city-level global air pollution data and builds a machine learning model to classify the overall Air Quality Index (AQI) category. The project combines exploratory data analysis, statistical testing, and an interactive Streamlit WebApp for AQI category prediction.
 
-## Dataset
-Source: Global Air Pollution Dataset on Kaggle  
-Dataset link: https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset
+The main project goal is to understand how pollutant-specific AQI values relate to the overall AQI category and to create a usable prediction tool based on pollutant measurements and country information.
+
+## Data Source
+Dataset: Global Air Pollution Dataset on Kaggle
+Source link: <https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset>
 
 The dataset contains city-level air quality observations, including:
+
 - Country
 - City
-- AQI category
-- Pollutant-specific AQI values for CO, Ozone, NO2, and PM2.5
+- Overall AQI value and AQI category
+- CO AQI value and category
+- Ozone AQI value and category
+- NO2 AQI value and category
+- PM2.5 AQI value and category
 
-## Project Goal
-The goal of this project is to classify the overall AQI category using pollutant AQI measurements and related categorical features, while also performing statistical analyses to better understand patterns in air pollution across locations.
+The expected local data path is:
+
+```text
+data/global_air_pollution_dataset.csv
+```
+
+See `data/readme_data.txt` for instructions on how to obtain the data and where to place it.
 
 ## Methods
+The analysis includes:
 
-### Data preprocessing
-- Removed duplicates
-- Standardized text fields
-- Converted AQI-related columns to numeric format
-- Filtered valid AQI category labels
-
-### Feature engineering
-The current modeling version uses:
-- Country
-- City
-- CO AQI Value
-- Ozone AQI Value
-- NO2 AQI Value
-- PM2.5 AQI Value
-- Dominant Pollutant
-
-### Baseline model
-- DummyClassifier with `most_frequent` strategy
-
-### Machine learning models
-- Logistic Regression
-- Random Forest
-
-### Statistical analysis component
+- Removing duplicate records
+- Standardizing text fields
+- Converting AQI columns to numeric values
+- Filtering valid AQI category labels
+- Creating a dominant pollutant feature
+- AQI category distribution analysis
+- Country-level AQI comparisons
 - Spearman correlation analysis between overall AQI and pollutant AQI values
-- Kruskal-Wallis test for AQI differences across top countries
-- Bootstrap confidence interval for mean AQI
+- Bootstrap confidence interval estimation for mean AQI
+- Random Forest classification for AQI category prediction
 
-## Current Milestone 1 Results
-The baseline model performed poorly, as expected, while Logistic Regression produced much stronger classification results, indicating that pollutant AQI measurements are highly informative for overall AQI category classification.
+## Required Packages
+Install the required Python packages with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Main packages:
+
+- pandas
+- numpy
+- scipy
+- scikit-learn
+- matplotlib
+- seaborn
+- streamlit
+- jupyter
+- ipykernel
+
+## How to Run the Code
+Run the Streamlit WebApp from the project root:
+
+```bash
+streamlit run main.py
+```
+
+The app provides:
+
+- Dataset overview and filters
+- AQI category distribution
+- Country-level AQI ranking
+- Pollutant relationship charts
+- Statistical summary tables
+- Random Forest model evaluation
+- Interactive AQI category prediction
+
+The original notebook analysis is available at:
+
+```text
+notebooks/global_air_pollution_aqi_analysis.ipynb
+```
 
 ## Repository Structure
 ```text
 data/
+  global_air_pollution_dataset.csv
+  readme_data.txt
 notebooks/
+  global_air_pollution_aqi_analysis.ipynb
 outputs/
+  figures/
+main.py
+aux_1.py
 README.md
+ReadMe.txt
 requirements.txt
+```
+
+## GitHub Repository
+Direct repository link:
+
+<https://github.com/JiaLiangTang325/DSCI441_project_JiaLiang_Xuyang>
 
