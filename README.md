@@ -41,6 +41,16 @@ The analysis includes:
 - Bootstrap confidence interval estimation for mean AQI
 - Random Forest classification for AQI category prediction
 
+## Model Notes and Limitations
+The Streamlit prediction tool is intended for educational demonstration and exploratory analysis. It predicts AQI category from the available pollutant AQI values and country information in the Kaggle dataset. It should not be used as an official environmental or public health warning system.
+
+Important limitations:
+
+- The dataset is city-level and does not include time-series weather or monitoring station metadata.
+- Model performance is evaluated on a held-out split from the same dataset, so real-world performance may differ.
+- The app predicts AQI category, not future measured AQI values.
+- Predictions depend on the quality and coverage of the original Kaggle dataset.
+
 ## Required Packages
 Install the required Python packages with:
 
