@@ -17,3 +17,5 @@ Expected project path:
 data/global_air_pollution_dataset.csv
 
 The Streamlit app and analysis code expect this exact relative path.
+
+See data_dictionary.txt for the meaning of each dataset column used by the analysis.

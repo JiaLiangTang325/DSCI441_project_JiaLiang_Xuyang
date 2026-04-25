@@ -1,0 +1,40 @@
+Global Air Pollution Dataset Data Dictionary
+
+Country
+Name of the country where the air quality observation was recorded.
+
+City
+Name of the city for the observation.
+
+AQI Value
+Overall Air Quality Index value for the city.
+
+AQI Category
+Overall AQI category label, such as Good, Moderate, Unhealthy, Very Unhealthy, or Hazardous.
+
+CO AQI Value
+Carbon monoxide AQI value.
+
+CO AQI Category
+Carbon monoxide AQI category label.
+
+Ozone AQI Value
+Ozone AQI value.
+
+Ozone AQI Category
+Ozone AQI category label.
+
+NO2 AQI Value
+Nitrogen dioxide AQI value.
+
+NO2 AQI Category
+Nitrogen dioxide AQI category label.
+
+PM2.5 AQI Value
+Fine particulate matter AQI value.
+
+PM2.5 AQI Category
+Fine particulate matter AQI category label.
+
+Dominant Pollutant
+Engineered feature created by the project code. It is the pollutant with the highest pollutant-specific AQI value for a row.
