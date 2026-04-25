@@ -27,14 +27,14 @@ Install packages
 pip install -r requirements.txt
 
 Run the Streamlit WebApp
-streamlit run main.py
+streamlit run aux_1.py
 
 Deploy the Streamlit WebApp
 1. Go to https://share.streamlit.io/
 2. Sign in with GitHub.
 3. Choose this repository.
 4. Set branch to main.
-5. Set main file path to main.py.
+5. Set main file path to aux_1.py.
 6. Deploy and use the generated streamlit.app link for the demo submission.
 
 Repository structure
@@ -50,3 +50,7 @@ aux_1.py
 README.md
 ReadMe.txt
 requirements.txt
+
+File roles
+aux_1.py is the Streamlit WebApp entry point.
+main.py contains reusable data processing, statistics, modeling, and prediction functions.
