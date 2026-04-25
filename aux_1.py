@@ -24,6 +24,24 @@ AQI_CATEGORY_ORDER = [
     "Hazardous",
 ]
 
+AQI_CATEGORY_COLORS = {
+    "Good": "#2f9e44",
+    "Moderate": "#f59f00",
+    "Unhealthy for Sensitive Groups": "#f08c00",
+    "Unhealthy": "#e03131",
+    "Very Unhealthy": "#9c36b5",
+    "Hazardous": "#5f3dc4",
+}
+
+AQI_CATEGORY_DESCRIPTIONS = {
+    "Good": "Air quality is satisfactory.",
+    "Moderate": "Air quality is acceptable for most people.",
+    "Unhealthy for Sensitive Groups": "Sensitive groups may experience health effects.",
+    "Unhealthy": "Some members of the general public may experience health effects.",
+    "Very Unhealthy": "Health alert conditions are possible.",
+    "Hazardous": "Emergency health conditions are possible.",
+}
+
 POLLUTANT_VALUE_COLS = [
     "CO AQI Value",
     "Ozone AQI Value",
